@@ -1,0 +1,44 @@
+// === main navigation ===
+
+@import 'assets', 'elements';
+
+.page-nav {
+  //::: general :::
+
+  // container
+  .region-nav {
+    margin-top: $s;
+    margin-bottom: $s;
+  }
+}
+
+//::: logo zone :::
+#block-alcazar-branding{
+  text-align: center;
+  //logo
+  img{
+    height: $m;
+    width: auto;
+    margin-bottom: $s;
+  }
+}
+
+// ::: navigation :::
+nav{
+  text-align: center;
+
+  ul{
+    @extend .clean-ul;
+
+    li{
+      display: inline-block;
+      margin-left: $xs;
+      margin-right: $xs;
+
+      a{
+        @extend .clean-a;
+
+      }
+    }
+  }
+}

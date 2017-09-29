@@ -1,0 +1,31 @@
+// === general style elements ===
+
+// ::: fonts :::
+
+// oswald for the win ;-)
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+
+// ::: font sizes :::
+
+$title: 4.8rem;
+$subtitle: 2.4rem;
+$text: 1.6rem;
+$footer: 1.4rem;
+
+// ::: colors :::
+
+$smokyblack: #0a0f0d;
+$mistyblack: rgba(10, 15, 13, 0.5);
+$platinum: #dee5e5;
+$persiangreen: #0f9e8e;
+$pommegranate: #ff5a5f;
+$snowwhite: #ffffff;
+
+// ::: distances :::
+
+$xs: 10px;
+$s: 25px;
+$m: 50px;
+$xl: 100px;
+$xxl: 150px; //used for buttons

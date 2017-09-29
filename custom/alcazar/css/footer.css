@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.content-block, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 10px; }
+
+.clean-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.clean-a, .red_button a, .white_button a {
+  text-decoration: none;
+  color: #0a0f0d;
+  text-transform: lowercase;
+  -webkit-transition: color 1s;
+  /* Safari */
+  transition: color 1s; }
+
+.clean-a:hover, .red_button a:hover, .white_button a:hover {
+  color: #dee5e5; }
+
+.title {
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  color: #ffffff;
+  margin-bottom: 25px; }
+
+.title_number {
+  color: #dee5e5;
+  font-size: 64px; }
+
+.title_subtitle {
+  font-size: 36px;
+  margin-left: -50px;
+  text-transform: lowercase; }
+
+p {
+  font-weight: 300; }
+
+.red_button {
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ff5a5f;
+  background-color: #ff5a5f;
+  text-align: center;
+  -webkit-transition: all 1s;
+  /* Safari */
+  transition: all 1s; }
+  .red_button a {
+    color: #ffffff;
+    text-transform: lowercase; }
+
+.red_button:hover {
+  background-color: #ffffff; }
+  .red_button:hover a {
+    color: #ff5a5f !important; }
+
+.white_button {
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ff5a5f;
+  text-align: center;
+  -webkit-transition: all 1s;
+  /* Safari */
+  transition: all 1s; }
+  .white_button a {
+    color: #ff5a5f;
+    text-transform: lowercase; }
+
+.white_button:hover {
+  background-color: #ff5a5f; }
+  .white_button:hover a {
+    color: #ffffff; }
+
+footer {
+  margin-top: 100px;
+  background-color: #0f9e8e;
+  color: #ffffff;
+  font-size: 1.4rem; }
+  footer nav ul li {
+    display: block !important; }
+    footer nav ul li a {
+      color: #ffffff; }
+  footer nav ul li:first-child {
+    margin-bottom: 25px; }
+  footer #block-immoalcazar {
+    margin-top: 50px;
+    text-align: center; }
+    footer #block-immoalcazar a {
+      color: #ffffff; }
+
+/*# sourceMappingURL=footer.css.map */

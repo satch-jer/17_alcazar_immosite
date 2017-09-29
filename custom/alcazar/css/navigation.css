@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.content-block {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 10px; }
+
+.clean-ul, nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.clean-a, .red_button a, .white_button a, nav ul li a {
+  text-decoration: none;
+  color: #0a0f0d;
+  text-transform: lowercase;
+  -webkit-transition: color 1s;
+  /* Safari */
+  transition: color 1s; }
+
+.clean-a:hover, .red_button a:hover, .white_button a:hover, nav ul li a:hover {
+  color: #dee5e5; }
+
+.title {
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  color: #ffffff;
+  margin-bottom: 25px; }
+
+.title_number {
+  color: #dee5e5;
+  font-size: 64px; }
+
+.title_subtitle {
+  font-size: 36px;
+  margin-left: -50px;
+  text-transform: lowercase; }
+
+p {
+  font-weight: 300; }
+
+.red_button {
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ff5a5f;
+  background-color: #ff5a5f;
+  text-align: center;
+  -webkit-transition: all 1s;
+  /* Safari */
+  transition: all 1s; }
+  .red_button a {
+    color: #ffffff;
+    text-transform: lowercase; }
+
+.red_button:hover {
+  background-color: #ffffff; }
+  .red_button:hover a {
+    color: #ff5a5f !important; }
+
+.white_button {
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ff5a5f;
+  text-align: center;
+  -webkit-transition: all 1s;
+  /* Safari */
+  transition: all 1s; }
+  .white_button a {
+    color: #ff5a5f;
+    text-transform: lowercase; }
+
+.white_button:hover {
+  background-color: #ff5a5f; }
+  .white_button:hover a {
+    color: #ffffff; }
+
+.page-nav .region-nav {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+#block-alcazar-branding {
+  text-align: center; }
+  #block-alcazar-branding img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 25px; }
+
+nav {
+  text-align: center; }
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px; }
+
+/*# sourceMappingURL=navigation.css.map */

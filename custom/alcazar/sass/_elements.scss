@@ -1,0 +1,116 @@
+//=== reusable elements/blocks ===
+
+@import 'assets';
+
+
+//::: content container :::
+.content-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+//::: content block :::
+.content-block{
+  max-width: 1200px;
+  //100px margin at top and bottom, horizontal center
+  margin: 0 auto;
+  padding: $xl $xs;
+}
+
+//::: clean ul :::
+.clean-ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//::: clean a :::
+.clean-a{
+  text-decoration: none;
+  color: $smokyblack;
+  text-transform: lowercase;
+
+  //css3 transitions rocks
+  -webkit-transition: color 1s; /* Safari */
+  transition: color 1s;
+}
+
+.clean-a:hover{
+  color: $platinum;
+}
+
+//::: big title :::
+.title{
+  text-transform: uppercase;
+  font-size: $title;
+  color: $snowwhite;
+  margin-bottom: $s;
+}
+
+//::: grey number in title :::
+.title_number{
+  color: $platinum;
+  font-size: 64px;
+}
+
+.title_subtitle{
+  font-size: 36px;
+  margin-left: -($m); //some overlap with number
+  text-transform: lowercase;
+}
+
+//::: def paragraph :::
+p{
+  font-weight: 300;
+}
+
+
+//::: buttons :::
+.red_button{
+  width: $xxl;
+  padding-top: $xs;
+  padding-bottom: $xs;
+  border: 1px solid $pommegranate;
+  background-color: $pommegranate;
+  text-align: center;
+
+  // css3 transitions rocks
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s;
+  a{
+    @extend .clean-a;
+    color: $snowwhite;
+    text-transform: lowercase;
+  }
+}
+
+.red_button:hover{
+  background-color: $snowwhite;
+  a{
+    color: $pommegranate !important;
+  }
+}
+
+.white_button{
+  width: $xxl;
+  padding-top: $xs;
+  padding-bottom: $xs;
+  border: 1px solid $pommegranate;
+  text-align: center;
+
+  //css3 transitions rocks
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s;
+  a{
+    @extend .clean-a;
+    color: $pommegranate;
+    text-transform: lowercase;
+  }
+}
+
+.white_button:hover{
+  background-color: $pommegranate;
+  a{
+    color: $snowwhite;
+  }
+}

@@ -1,0 +1,21 @@
+name: Alcazar
+type: theme
+description: 'Drupal 8 theme voor Immo Alcazar, made by <a href="http://satch.cc">Satch</a>.'
+package: Core
+version: 1
+core: 8.x
+base theme: classy
+
+libraries:
+  - core/normalize
+  - alcazar/global-styling
+
+libraries-override:
+  classy/base: false
+
+regions:
+  header: Header
+  nav: Navigation
+  content: Content
+  blocks: Blocks
+  footer: Footer

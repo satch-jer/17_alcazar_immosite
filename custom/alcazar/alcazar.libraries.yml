@@ -1,0 +1,22 @@
+global-styling:
+  version: 1
+  css:
+    base:
+      css/alcazar.css: {}
+      css/elements.css: {}
+      css/header.css: {}
+      css/navigation.css: {}
+      css/landing.css: {}
+      css/content.css: {}
+      css/footer.css: {}
+  js:
+    js/alcazar.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+landing:
+  version: 1
+  js:
+    js/landing.js: {}

@@ -1,0 +1,44 @@
+// === content ===
+
+@import 'assets', 'elements';
+
+//::: content container :::
+.alcazar_content{
+  //giving space
+  @extend .content-block;
+}
+
+//::: grey number title :::
+.field--name-field-alcazar-number{
+  @extend .title_number;
+  display: inline;
+}
+
+//::: subtitle :::
+.field--name-field-alcazar-subtitle{
+  @extend .title_subtitle;
+  display: inline;
+}
+
+//:::two c2a under text
+.field--name-field-alcazar-buttons{
+  margin-top: $s;
+  div{
+    @extend .white_button;
+    margin: 0 auto;
+  }
+  div:first-child{
+    @extend .red_button;
+    margin-bottom: $xs;
+  }
+}
+
+//full width image (in between)
+.field--name-field-imageblock-image{
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+  }
+}

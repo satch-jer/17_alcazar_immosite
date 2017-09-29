@@ -1,0 +1,35 @@
+// === green header on top ===
+
+@import 'assets', 'elements';
+
+header{
+  background-color: $persiangreen;
+
+  //::: fonts :::
+  color: $snowwhite;
+  text-align: right;
+  //::: content container :::
+  .region-header{
+    @extend .content-container;
+    padding-top: $xs;
+    padding-bottom: $xs;
+    margin-right: $xs;
+  }
+
+  //::: icon :::
+  .field--name-field-ablock-icon{
+    display: inline;
+
+    img{
+      margin-right: $xs;
+      width: 10px;
+      height: auto;
+    }
+  }
+
+  //::: text :::
+  .field--name-field-ablock-text{
+    display: inline;
+    text-transform: lowercase;
+  }
+}

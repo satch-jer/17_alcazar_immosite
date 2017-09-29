@@ -1,0 +1,36 @@
+// === footerthefoot ===
+
+@import 'assets', 'elements';
+
+footer{
+  @extend .content-block;
+  //for now, maybe not necessary with more content!
+  margin-top: $xl;
+
+  background-color: $persiangreen;
+  color: $snowwhite;
+  font-size: $footer;
+
+  nav{
+    ul{
+      li{
+        display: block !important;
+        a{
+          color: $snowwhite;
+        }
+      }
+      li:first-child{
+        margin-bottom: $s;
+      }
+    }
+  }
+
+  #block-immoalcazar{
+    margin-top: $m;
+    text-align: center;
+
+    a{
+      color: $snowwhite;
+    }
+  }
+}

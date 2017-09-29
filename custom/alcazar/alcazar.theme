@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the alacazar theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function alcazar_preprocess_html(&$variables) {
+
+}

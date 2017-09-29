@@ -1,0 +1,64 @@
+// === full height landing ===
+
+@import 'assets', 'elements';
+
+.alcazar_landing{
+  //if no js, set min-height
+  min-height: 500px;
+
+  //flexbox for vertical centering
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// ::: title zone :::
+.alcazar_landing_title{
+  width: 75%;
+  text-align: center;
+  color: $snowwhite;
+  z-index: 99;
+  background-color: $mistyblack;
+  padding: $s;
+}
+
+// ::: big title :::
+h1{
+  @extend .title;
+}
+
+//::: arrow in red block :::
+.alcazar_landing_arrow{
+  margin-top: $m;
+
+  a{
+    @extend .clean-a;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    background-image: url('../../../../sites/default/files/2017-09/arrowdown.svg');
+    background-repeat: no-repeat;
+    background-color: $pommegranate;
+  }
+  a:hover{
+    animation-name: turning;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+}
+
+//::: css3 animation :::
+@keyframes turning {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(-0.5turn);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
