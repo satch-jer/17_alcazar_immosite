@@ -3,19 +3,24 @@
 @import 'assets', 'elements';
 
 //::: content container :::
-.alcazar_content{
+.alcazar_content, #block-overons{
   //giving space
   @extend .content-block;
 }
 
 //::: grey number title :::
-.field--name-field-alcazar-number{
+// content and blocks
+.field--name-field-alcazar-number,
+.field--name-field-teaserblock-number,
+.field--name-field-aanbodblock-number{
   @extend .title_number;
   display: inline;
 }
 
 //::: subtitle :::
-.field--name-field-alcazar-subtitle{
+.field--name-field-alcazar-subtitle,
+.field--name-field-teaserblock-title,
+.field--name-field-aanbodblock-title{
   @extend .title_subtitle;
   display: inline;
 }
@@ -33,6 +38,11 @@
   }
 }
 
+.field--name-field-teaserblock-link{
+  @extend .red_button;
+  margin: $s auto 0 auto;
+}
+
 //full width image (in between)
 .field--name-field-imageblock-image{
   width: 100%;
@@ -40,5 +50,87 @@
     width: 100%;
     height: auto;
     background-attachment: fixed;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+//::: specific styling for aanbodblock
+#block-onsaanbod{
+  padding: $m 0;
+}
+
+.aanbodblock_title{
+  max-width: 1200px;
+  //100px margin at top and bottom, horizontal center
+  margin: 0 auto;
+  padding: 0 $xs $s $xs;
+}
+
+.aanbodblock_left{
+  width: 100%;
+  position: relative;
+  background-color: $platinum;
+
+  .field--name-field-aanbodblock-image1,
+  .field--name-field-aanbodblock-image2{
+    img{
+      width: 100%;
+      height: auto;
+
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    img:hover{
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .field--name-field-aanbodblock-overlay1,
+  .field--name-field-aanbodblock-overlay2{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: $snowwhite;
+    text-transform: lowercase;
+    background-color: $mistyblack;
+    padding-top: $xs;
+    padding-bottom: $xs;
+  }
+}
+
+.aanbodblock_right{
+  width: 100%;
+  height: 200px;
+  background-color: $platinum;
+
+  //flexbox for vertical centering
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .field--name-field-aanbodblock-intro1,
+  .field--name-field-aanbodblock-intro2{
+    padding: $xs $s;
+    font-weight: 300;
+  }
+
+  .aanbodblock_right_link{
+    padding: $xs $s;
+
+    div{
+      @extend .white_button;
+    }
   }
 }

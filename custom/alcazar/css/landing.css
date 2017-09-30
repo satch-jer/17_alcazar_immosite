@@ -7,7 +7,7 @@
 .content-block {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 10px; }
+  padding: 50px 10px; }
 
 .clean-ul {
   list-style: none;
@@ -85,7 +85,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #dee5e5; }
 
 .alcazar_landing_title {
   width: 75%;

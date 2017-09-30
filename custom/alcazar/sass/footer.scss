@@ -4,8 +4,6 @@
 
 footer{
   @extend .content-block;
-  //for now, maybe not necessary with more content!
-  margin-top: $xl;
 
   background-color: $persiangreen;
   color: $snowwhite;

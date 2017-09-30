@@ -4,17 +4,17 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-.content-block, .alcazar_content {
+.content-block, .alcazar_content, #block-overons {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 10px; }
+  padding: 50px 10px; }
 
 .clean-ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.clean-a, .red_button a, .field--name-field-alcazar-buttons div:first-child a, .white_button a, .field--name-field-alcazar-buttons div a {
+.clean-a, .red_button a, .field--name-field-alcazar-buttons div:first-child a, .field--name-field-teaserblock-link a, .white_button a, .field--name-field-alcazar-buttons div a, .aanbodblock_right .aanbodblock_right_link div a {
   text-decoration: none;
   color: #0a0f0d;
   text-transform: lowercase;
@@ -22,7 +22,7 @@
   /* Safari */
   transition: color 1s; }
 
-.clean-a:hover, .red_button a:hover, .white_button a:hover, .field--name-field-alcazar-buttons div a:hover {
+.clean-a:hover, .red_button a:hover, .field--name-field-teaserblock-link a:hover, .white_button a:hover, .field--name-field-alcazar-buttons div a:hover, .aanbodblock_right .aanbodblock_right_link div a:hover {
   color: #dee5e5; }
 
 .title {
@@ -31,11 +31,15 @@
   color: #ffffff;
   margin-bottom: 25px; }
 
-.title_number, .field--name-field-alcazar-number {
+.title_number, .field--name-field-alcazar-number,
+.field--name-field-teaserblock-number,
+.field--name-field-aanbodblock-number {
   color: #dee5e5;
   font-size: 64px; }
 
-.title_subtitle, .field--name-field-alcazar-subtitle {
+.title_subtitle, .field--name-field-alcazar-subtitle,
+.field--name-field-teaserblock-title,
+.field--name-field-aanbodblock-title {
   font-size: 36px;
   margin-left: -50px;
   text-transform: lowercase; }
@@ -43,7 +47,7 @@
 p {
   font-weight: 300; }
 
-.red_button, .field--name-field-alcazar-buttons div:first-child {
+.red_button, .field--name-field-alcazar-buttons div:first-child, .field--name-field-teaserblock-link {
   width: 150px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -53,16 +57,16 @@ p {
   -webkit-transition: all 1s;
   /* Safari */
   transition: all 1s; }
-  .red_button a, .field--name-field-alcazar-buttons div:first-child a {
+  .red_button a, .field--name-field-alcazar-buttons div:first-child a, .field--name-field-teaserblock-link a {
     color: #ffffff;
     text-transform: lowercase; }
 
-.red_button:hover, .field--name-field-alcazar-buttons div:hover:first-child {
+.red_button:hover, .field--name-field-alcazar-buttons div:hover:first-child, .field--name-field-teaserblock-link:hover {
   background-color: #ffffff; }
-  .red_button:hover a, .field--name-field-alcazar-buttons div:hover:first-child a {
+  .red_button:hover a, .field--name-field-alcazar-buttons div:hover:first-child a, .field--name-field-teaserblock-link:hover a {
     color: #ff5a5f !important; }
 
-.white_button, .field--name-field-alcazar-buttons div {
+.white_button, .field--name-field-alcazar-buttons div, .aanbodblock_right .aanbodblock_right_link div {
   width: 150px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -71,19 +75,23 @@ p {
   -webkit-transition: all 1s;
   /* Safari */
   transition: all 1s; }
-  .white_button a, .field--name-field-alcazar-buttons div a {
+  .white_button a, .field--name-field-alcazar-buttons div a, .aanbodblock_right .aanbodblock_right_link div a {
     color: #ff5a5f;
     text-transform: lowercase; }
 
-.white_button:hover, .field--name-field-alcazar-buttons div:hover {
+.white_button:hover, .field--name-field-alcazar-buttons div:hover, .aanbodblock_right .aanbodblock_right_link div:hover {
   background-color: #ff5a5f; }
-  .white_button:hover a, .field--name-field-alcazar-buttons div:hover a {
+  .white_button:hover a, .field--name-field-alcazar-buttons div:hover a, .aanbodblock_right .aanbodblock_right_link div:hover a {
     color: #ffffff; }
 
-.field--name-field-alcazar-number {
+.field--name-field-alcazar-number,
+.field--name-field-teaserblock-number,
+.field--name-field-aanbodblock-number {
   display: inline; }
 
-.field--name-field-alcazar-subtitle {
+.field--name-field-alcazar-subtitle,
+.field--name-field-teaserblock-title,
+.field--name-field-aanbodblock-title {
   display: inline; }
 
 .field--name-field-alcazar-buttons {
@@ -93,11 +101,72 @@ p {
   .field--name-field-alcazar-buttons div:first-child {
     margin-bottom: 10px; }
 
+.field--name-field-teaserblock-link {
+  margin: 25px auto 0 auto; }
+
 .field--name-field-imageblock-image {
   width: 100%; }
   .field--name-field-imageblock-image img {
     width: 100%;
     height: auto;
-    background-attachment: fixed; }
+    background-attachment: fixed;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .field--name-field-imageblock-image img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+#block-onsaanbod {
+  padding: 50px 0; }
+
+.aanbodblock_title {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px 25px 10px; }
+
+.aanbodblock_left {
+  width: 100%;
+  position: relative;
+  background-color: #dee5e5; }
+  .aanbodblock_left .field--name-field-aanbodblock-image1 img,
+  .aanbodblock_left .field--name-field-aanbodblock-image2 img {
+    width: 100%;
+    height: auto;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .aanbodblock_left .field--name-field-aanbodblock-image1 img:hover,
+  .aanbodblock_left .field--name-field-aanbodblock-image2 img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .aanbodblock_left .field--name-field-aanbodblock-overlay1,
+  .aanbodblock_left .field--name-field-aanbodblock-overlay2 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: lowercase;
+    background-color: rgba(10, 15, 13, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.aanbodblock_right {
+  width: 100%;
+  height: 200px;
+  background-color: #dee5e5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .aanbodblock_right .field--name-field-aanbodblock-intro1,
+  .aanbodblock_right .field--name-field-aanbodblock-intro2 {
+    padding: 10px 25px;
+    font-weight: 300; }
+  .aanbodblock_right .aanbodblock_right_link {
+    padding: 10px 25px; }
 
 /*# sourceMappingURL=content.css.map */

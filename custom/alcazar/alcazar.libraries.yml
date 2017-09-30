@@ -20,3 +20,8 @@ landing:
   version: 1
   js:
     js/landing.js: {}
+
+aanbodblock:
+  version: 1
+  js:
+    js/aanbodblock.js: {}
