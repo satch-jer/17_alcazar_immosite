@@ -11,3 +11,9 @@
 function alcazar_preprocess_html(&$variables) {
 
 }
+
+function alcazar_preprocess_links(&$variables) {
+    if (isset($variables['links']['node-readmore'])) {
+      $variables['links']['node-readmore']['link']['#title'] = t('download plan');
+    }
+}

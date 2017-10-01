@@ -8,6 +8,7 @@ global-styling:
       css/navigation.css: {}
       css/landing.css: {}
       css/content.css: {}
+      css/filter.css: {}
       css/footer.css: {}
   js:
     js/alcazar.js: {}
@@ -25,3 +26,8 @@ aanbodblock:
   version: 1
   js:
     js/aanbodblock.js: {}
+
+linktext:
+  version: 1
+  js:
+    js/linktext.js: {}

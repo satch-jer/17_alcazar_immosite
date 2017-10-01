@@ -1,0 +1,102 @@
+// === filter on real estate pages ===
+
+@import 'assets', 'elements';
+
+//::: the filter :::
+#block-appartementtypea{
+
+  //only margin-top, full width + margin-bottom on second filter line
+  margin-top: $m;
+
+  //full link zone with platinum bgc
+  .field--name-field-linksblock-links{
+    background-color: $platinum;
+
+    //the individual links (div)
+    .field__item{
+      display: inline-block;
+      width: 24%;
+      text-align: center;
+      padding-top: $s;
+      padding-bottom: $s;
+
+      a{
+        text-transform: uppercase;
+        color: $smokyblack;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+//::: the appartments :::
+.view-id-appartementen{
+  .views-row{
+    //some whitespace between filter row and content
+    margin: $m $xs;
+  }
+
+  //green title
+  .views-field-title{
+    margin-bottom: $s;
+
+    a{
+      text-transform: lowercase;
+      color: $persiangreen;
+      font-size: $subtitle;
+      text-decoration: none;
+    }
+  }
+
+  //labels are in uppercase
+  span{
+    text-transform: uppercase;
+  }
+
+  .views-field-field-realestate-tag,
+  .views-field-field-realestate-opp,
+  .views-field-field-realestate-rooms,
+  .views-field-field-realestate-price
+  {
+    padding-bottom: $xs;
+    padding-top: $xs;
+    border-bottom: 1px solid $platinum;
+
+    .field-content{
+      display: inline-block;
+
+      a{
+        text-decoration: none;
+        color: $smokyblack;
+      }
+    }
+  }
+
+  .views-field-field-realestate-img{
+    margin-bottom: $s;
+
+    img{
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  .views-field-field-realestate-plan{
+
+    .field-content{
+      @extend .white_button;
+      //center button
+      margin: 0 auto;
+    }
+
+    .file--application-pdf{
+      background-image: none;  
+    }
+    
+    .file{
+      padding-left: 0;
+      background-position: 0 0;
+    }
+  }
+}
