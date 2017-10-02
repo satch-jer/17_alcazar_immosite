@@ -20,6 +20,10 @@
       padding-top: $s;
       padding-bottom: $s;
 
+      //css3 transitions rocks
+      -webkit-transition: background-color 1s; /* Safari */
+      transition: background-color 1s;
+
       a{
         text-transform: uppercase;
         color: $smokyblack;
@@ -27,6 +31,15 @@
       }
     }
 
+    .field__item:hover{
+      background-color: $snowwhite;
+      border-bottom: 2px solid $persiangreen;
+    }
+
+    .active{
+      background-color: $snowwhite;
+      border-bottom: 2px solid $persiangreen;
+    }
   }
 }
 

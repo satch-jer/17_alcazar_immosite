@@ -31,3 +31,8 @@ linktext:
   version: 1
   js:
     js/linktext.js: {}
+
+filter:
+  version: 1
+  js:
+    js/filter.js: {}

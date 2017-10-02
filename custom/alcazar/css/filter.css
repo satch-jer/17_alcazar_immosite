@@ -89,11 +89,20 @@ p {
       width: 24%;
       text-align: center;
       padding-top: 25px;
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      -webkit-transition: background-color 1s;
+      /* Safari */
+      transition: background-color 1s; }
       #block-appartementtypea .field--name-field-linksblock-links .field__item a {
         text-transform: uppercase;
         color: #0a0f0d;
         text-decoration: none; }
+    #block-appartementtypea .field--name-field-linksblock-links .field__item:hover {
+      background-color: #ffffff;
+      border-bottom: 2px solid #0f9e8e; }
+    #block-appartementtypea .field--name-field-linksblock-links .active {
+      background-color: #ffffff;
+      border-bottom: 2px solid #0f9e8e; }
 
 .view-id-appartementen .views-row {
   margin: 50px 10px; }
