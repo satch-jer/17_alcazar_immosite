@@ -1,6 +1,6 @@
 (function ($, Drupal) {
 
-    Drupal.behaviors.filter = {
+    Drupal.behaviors.app = {
         attach: function (context, settings) {
             $(window).load(function () {
 
@@ -9,7 +9,7 @@
 
                 //show first row and add active class to filter
                 $('.view-appartementen > .view-content > .views-row:nth-child(1)').show()
-                $('.field--name-field-linksblock-links > .field__item:nth-child(1)').addClass("active");
+                $('#block-appartementtypea > .field--name-field-linksblock-links > .field__item:nth-child(1)').addClass("active");
 
                 //onclick
                 $('.field--name-field-linksblock-links > .field__item').on("click", function(e){
@@ -42,6 +42,18 @@
                             break;
                         case 11:
                             $('.view-appartementen > .view-content > .views-row:nth-child(4)').fadeIn()
+                            break;
+                        case 12:
+                            $('.view-appartementen > .view-content > .views-row:nth-child(5)').fadeIn()
+                            break;
+                        case 13:
+                            $('.view-appartementen > .view-content > .views-row:nth-child(6)').fadeIn()
+                            break;
+                        case 14:
+                            $('.view-appartementen > .view-content > .views-row:nth-child(7)').fadeIn()
+                            break;
+                        case 15:
+                            $('.view-appartementen > .view-content > .views-row:nth-child(8)').fadeIn()
                             break;
                     }
                 })

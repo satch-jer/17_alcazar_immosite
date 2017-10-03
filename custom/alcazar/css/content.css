@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-.content-block, .alcazar_content, #block-overons {
+.content-block, .alcazar_content, #block-overons, #block-googlemaps {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 10px; }
@@ -33,13 +33,15 @@
 
 .title_number, .field--name-field-alcazar-number,
 .field--name-field-teaserblock-number,
-.field--name-field-aanbodblock-number {
+.field--name-field-aanbodblock-number,
+.field--name-field-mapsblock-number {
   color: #dee5e5;
   font-size: 64px; }
 
 .title_subtitle, .field--name-field-alcazar-subtitle,
 .field--name-field-teaserblock-title,
-.field--name-field-aanbodblock-title {
+.field--name-field-aanbodblock-title,
+.field--name-field-mapsblock-title {
   font-size: 36px;
   margin-left: -50px;
   text-transform: lowercase; }
@@ -86,12 +88,14 @@ p {
 
 .field--name-field-alcazar-number,
 .field--name-field-teaserblock-number,
-.field--name-field-aanbodblock-number {
+.field--name-field-aanbodblock-number,
+.field--name-field-mapsblock-number {
   display: inline; }
 
 .field--name-field-alcazar-subtitle,
 .field--name-field-teaserblock-title,
-.field--name-field-aanbodblock-title {
+.field--name-field-aanbodblock-title,
+.field--name-field-mapsblock-title {
   display: inline; }
 
 .field--name-field-alcazar-buttons {

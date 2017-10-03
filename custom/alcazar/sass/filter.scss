@@ -3,7 +3,7 @@
 @import 'assets', 'elements';
 
 //::: the filter :::
-#block-appartementtypea{
+#block-appartementtypea, #block-appartementtypeb, #block-huistypea, #block-huistypeb{
 
   //only margin-top, full width + margin-bottom on second filter line
   margin-top: $m;
@@ -43,8 +43,49 @@
   }
 }
 
-//::: the appartments :::
-.view-id-appartementen{
+//::: the filter for 5 :::
+#block-huistypeb{
+
+  //only margin-top, full width + margin-bottom on second filter line
+  margin-top: $m;
+
+  //full link zone with platinum bgc
+  .field--name-field-linksblock-links{
+    background-color: $platinum;
+
+    //the individual links (div)
+    .field__item{
+      display: inline-block;
+      width: 19%;
+      text-align: center;
+      padding-top: $s;
+      padding-bottom: $s;
+
+      //css3 transitions rocks
+      -webkit-transition: background-color 1s; /* Safari */
+      transition: background-color 1s;
+
+      a{
+        text-transform: uppercase;
+        color: $smokyblack;
+        text-decoration: none;
+      }
+    }
+
+    .field__item:hover{
+      background-color: $snowwhite;
+      border-bottom: 2px solid $persiangreen;
+    }
+
+    .active{
+      background-color: $snowwhite;
+      border-bottom: 2px solid $persiangreen;
+    }
+  }
+}
+
+//::: the appartments / the houses :::
+.view-id-appartementen, .view-id-huizen{
   .views-row{
     //some whitespace between filter row and content
     margin: $m $xs;

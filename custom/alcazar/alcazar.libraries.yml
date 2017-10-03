@@ -32,7 +32,12 @@ linktext:
   js:
     js/linktext.js: {}
 
-filter:
+app:
   version: 1
   js:
-    js/filter.js: {}
+    js/app.js: {}
+
+house:
+  version: 1
+  js:
+    js/house.js: {}

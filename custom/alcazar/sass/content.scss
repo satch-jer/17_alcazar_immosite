@@ -3,7 +3,7 @@
 @import 'assets', 'elements';
 
 //::: content container :::
-.alcazar_content, #block-overons{
+.alcazar_content, #block-overons, #block-googlemaps{
   //giving space
   @extend .content-block;
 }
@@ -12,7 +12,8 @@
 // content and blocks
 .field--name-field-alcazar-number,
 .field--name-field-teaserblock-number,
-.field--name-field-aanbodblock-number{
+.field--name-field-aanbodblock-number,
+.field--name-field-mapsblock-number{
   @extend .title_number;
   display: inline;
 }
@@ -20,7 +21,8 @@
 //::: subtitle :::
 .field--name-field-alcazar-subtitle,
 .field--name-field-teaserblock-title,
-.field--name-field-aanbodblock-title{
+.field--name-field-aanbodblock-title,
+.field--name-field-mapsblock-title{
   @extend .title_subtitle;
   display: inline;
 }
