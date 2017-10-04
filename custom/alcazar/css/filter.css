@@ -167,10 +167,12 @@ p {
       text-decoration: none;
       color: #0a0f0d; }
 .view-id-appartementen .views-field-field-realestate-img, .view-id-huizen .views-field-field-realestate-img {
-  margin-bottom: 25px; }
+  margin: 25px auto;
+  width: 90%; }
   .view-id-appartementen .views-field-field-realestate-img img, .view-id-huizen .views-field-field-realestate-img img {
-    width: 90%;
-    height: auto; }
+    width: 100%;
+    height: auto;
+    margin: 0 auto !important; }
 .view-id-appartementen .views-field-field-realestate-plan .field-content, .view-id-huizen .views-field-field-realestate-plan .field-content {
   margin: 0 auto; }
 .view-id-appartementen .views-field-field-realestate-plan .file--application-pdf, .view-id-huizen .views-field-field-realestate-plan .file--application-pdf {

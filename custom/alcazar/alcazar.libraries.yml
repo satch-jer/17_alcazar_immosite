@@ -41,3 +41,9 @@ house:
   version: 1
   js:
     js/house.js: {}
+
+slideshow:
+  version: 1
+  js:
+    js/jquery.cycle.all.js: {}
+    js/slideshow.js: {}

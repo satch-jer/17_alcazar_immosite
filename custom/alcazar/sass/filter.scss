@@ -128,11 +128,13 @@
   }
 
   .views-field-field-realestate-img{
-    margin-bottom: $s;
+    margin: $s auto;
+    width: 90%;
 
     img{
-      width: 90%;
+      width: 100%;
       height: auto;
+      margin: 0 auto !important;
     }
   }
 
