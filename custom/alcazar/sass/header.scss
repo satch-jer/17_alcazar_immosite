@@ -31,5 +31,10 @@ header{
   .field--name-field-ablock-text{
     display: inline;
     text-transform: lowercase;
+
+    a{
+      @extend .clean-a;
+      color: $snowwhite;
+    }
   }
 }

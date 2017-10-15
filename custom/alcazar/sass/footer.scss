@@ -3,8 +3,8 @@
 @import 'assets', 'elements';
 
 footer{
-  @extend .content-block;
-
+  width: 100%;
+  padding: $m $xs;
   background-color: $persiangreen;
   color: $snowwhite;
   font-size: $footer;
@@ -31,4 +31,8 @@ footer{
       color: $snowwhite;
     }
   }
+}
+
+@media screen and (min-width: 900px){
+
 }

@@ -55,6 +55,9 @@
                         case 15:
                             $('.view-huizen > .view-content > .views-row:nth-child(8)').fadeIn()
                             break;
+                        case 16:
+                            $('.view-huizen > .view-content > .views-row:nth-child(9)').fadeIn()
+                            break;
                     }
                 })
             });

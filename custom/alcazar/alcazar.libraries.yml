@@ -8,6 +8,7 @@ global-styling:
       css/navigation.css: {}
       css/landing.css: {}
       css/content.css: {}
+      css/contact.css: {}
       css/filter.css: {}
       css/footer.css: {}
   js:
@@ -32,10 +33,10 @@ linktext:
   js:
     js/linktext.js: {}
 
-app:
+appartment:
   version: 1
   js:
-    js/app.js: {}
+    js/appartment.js: {}
 
 house:
   version: 1

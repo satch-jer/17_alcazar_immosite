@@ -22,7 +22,7 @@
   /* Safari */
   transition: color 1s; }
 
-.clean-a:hover, .red_button a:hover, .white_button a:hover, .view-id-appartementen .views-field-field-realestate-plan .field-content a:hover, .view-id-huizen .views-field-field-realestate-plan .field-content a:hover {
+.clean-a:hover, .red_button a:hover, .white_button a:hover, .view-id-appartementen .views-field-field-realestate-plan .field-content a:hover, .view-id-huizen .views-field-field-realestate-plan .field-content a:hover, .is-active {
   color: #dee5e5; }
 
 .title {
@@ -180,5 +180,12 @@ p {
 .view-id-appartementen .views-field-field-realestate-plan .file, .view-id-huizen .views-field-field-realestate-plan .file {
   padding-left: 0;
   background-position: 0 0; }
+
+@media screen and (min-width: 600px) {
+  .views-field-field-realestate-img {
+    max-width: 250px !important; } }
+@media screen and (min-width: 900px) {
+  .views-field-field-realestate-img {
+    max-width: 350px !important; } }
 
 /*# sourceMappingURL=filter.css.map */

@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-.content-block, footer {
+.content-block {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 10px; }
@@ -22,7 +22,7 @@
   /* Safari */
   transition: color 1s; }
 
-.clean-a:hover, .red_button a:hover, .white_button a:hover {
+.clean-a:hover, .red_button a:hover, .white_button a:hover, .is-active {
   color: #dee5e5; }
 
 .title {
@@ -81,6 +81,8 @@ p {
     color: #ffffff; }
 
 footer {
+  width: 100%;
+  padding: 50px 10px;
   background-color: #0f9e8e;
   color: #ffffff;
   font-size: 1.4rem; }

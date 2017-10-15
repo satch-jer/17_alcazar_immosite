@@ -156,3 +156,25 @@
     }
   }
 }
+
+@media screen and (min-width: 600px){
+  .views-field-field-realestate-img{
+    max-width: 250px !important;
+  }
+}
+
+@media screen and (min-width: 900px){
+
+
+  .views-field-field-realestate-img{
+    max-width: 350px !important;
+
+  }
+
+  .views-field-field-realestate-tag,
+  .views-field-field-realestate-opp,
+  .views-field-field-realestate-rooms,
+  .views-field-field-realestate-price{
+
+  }
+}

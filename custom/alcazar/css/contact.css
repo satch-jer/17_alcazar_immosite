@@ -4,17 +4,17 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-.content-block {
+.content-block, #block-webform {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 10px; }
 
-.clean-ul, nav ul {
+.clean-ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.clean-a, .red_button a, .white_button a, nav ul li a {
+.clean-a, .red_button a, .webform-button--submit a, .white_button a {
   text-decoration: none;
   color: #0a0f0d;
   text-transform: lowercase;
@@ -22,7 +22,7 @@
   /* Safari */
   transition: color 1s; }
 
-.clean-a:hover, .red_button a:hover, .white_button a:hover, nav ul li a:hover, .is-active {
+.clean-a:hover, .red_button a:hover, .webform-button--submit a:hover, .white_button a:hover, .is-active {
   color: #dee5e5; }
 
 .title {
@@ -43,7 +43,7 @@
 p {
   font-weight: 300; }
 
-.red_button {
+.red_button, .webform-button--submit {
   width: 150px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -53,13 +53,13 @@ p {
   -webkit-transition: all 1s;
   /* Safari */
   transition: all 1s; }
-  .red_button a {
+  .red_button a, .webform-button--submit a {
     color: #ffffff;
     text-transform: lowercase; }
 
-.red_button:hover {
+.red_button:hover, .webform-button--submit:hover {
   background-color: #ffffff; }
-  .red_button:hover a {
+  .red_button:hover a, .webform-button--submit:hover a {
     color: #ff5a5f !important; }
 
 .white_button {
@@ -80,22 +80,35 @@ p {
   .white_button:hover a {
     color: #ffffff; }
 
-.page-nav .region-nav {
-  margin-top: 25px;
-  margin-bottom: 25px; }
-
-#block-alcazar-branding {
+#block-webform {
   text-align: center; }
-  #block-alcazar-branding img {
-    height: 50px;
-    width: auto;
+  #block-webform .js-form-item {
     margin-bottom: 25px; }
+    #block-webform .js-form-item input, #block-webform .js-form-item textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 250px;
+      padding: 10px;
+      border: 1px solid #0a0f0d; }
+    #block-webform .js-form-item input:focus, #block-webform .js-form-item textarea:focus {
+      outline: none;
+      border: 1px solid #0f9e8e; }
+    #block-webform .js-form-item label {
+      display: none; }
 
-nav {
-  text-align: center; }
-  nav ul li {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px; }
+.webform-button--submit {
+  color: #ffffff;
+  text-transform: lowercase; }
 
-/*# sourceMappingURL=navigation.css.map */
+.messages--error, .messages--status {
+  margin-bottom: 50px !important; }
+
+@media screen and (min-width: 600px) {
+  #block-webform .js-form-item input, #block-webform .js-form-item textarea {
+    width: 450px; } }
+@media screen and (min-width: 900px) {
+  #block-webform .js-form-item input, #block-webform .js-form-item textarea {
+    width: 650px; } }
+
+/*# sourceMappingURL=contact.css.map */

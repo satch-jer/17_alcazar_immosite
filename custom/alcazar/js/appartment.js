@@ -1,6 +1,6 @@
 (function ($, Drupal) {
 
-    Drupal.behaviors.app = {
+    Drupal.behaviors.appartment = {
         attach: function (context, settings) {
             $(window).load(function () {
 

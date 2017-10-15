@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0; }
 
-.clean-a, .red_button a, .white_button a {
+.clean-a, .red_button a, .white_button a, header .field--name-field-ablock-text a {
   text-decoration: none;
   color: #0a0f0d;
   text-transform: lowercase;
@@ -22,7 +22,7 @@
   /* Safari */
   transition: color 1s; }
 
-.clean-a:hover, .red_button a:hover, .white_button a:hover {
+.clean-a:hover, .red_button a:hover, .white_button a:hover, header .field--name-field-ablock-text a:hover, .is-active {
   color: #dee5e5; }
 
 .title {
@@ -97,5 +97,7 @@ header {
   header .field--name-field-ablock-text {
     display: inline;
     text-transform: lowercase; }
+    header .field--name-field-ablock-text a {
+      color: #ffffff; }
 
 /*# sourceMappingURL=header.css.map */

@@ -22,7 +22,7 @@
   /* Safari */
   transition: color 1s; }
 
-.clean-a:hover, .red_button a:hover, .white_button a:hover, .alcazar_landing_arrow a:hover {
+.clean-a:hover, .red_button a:hover, .white_button a:hover, .alcazar_landing_arrow a:hover, .is-active {
   color: #dee5e5; }
 
 .title, h1 {

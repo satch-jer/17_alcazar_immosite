@@ -3,9 +3,16 @@
 @import 'assets', 'elements';
 
 //::: content container :::
-.alcazar_content, #block-overons, #block-googlemaps{
+.alcazar_content, #block-overons, #block-locatie{
   //giving space
   @extend .content-block;
+}
+
+//map is 100% width
+#block-googlemaps{
+  width: 100%;
+  //100px margin at bottom
+  padding-bottom: $m;
 }
 
 //::: grey number title :::
@@ -48,6 +55,7 @@
 //full width image (in between)
 .field--name-field-imageblock-image{
   width: 100%;
+  overflow: hidden;
   img{
     width: 100%;
     height: auto;
@@ -83,9 +91,13 @@
 
   .field--name-field-aanbodblock-image1,
   .field--name-field-aanbodblock-image2{
+    overflow: hidden;
+
     img{
       width: 100%;
       height: auto;
+      //remove 3px margin under image ;)
+      vertical-align: middle;
 
       -moz-transition: all 0.3s;
       -webkit-transition: all 0.3s;
@@ -136,3 +148,29 @@
     }
   }
 }
+
+@media screen and (min-width: 600px){
+  .field--name-field-alcazar-buttons{
+    text-align: center;
+    div{
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 900px){
+  .aanbodblock_appartementen, .aanbodblock_huizen{
+    display: flex;
+
+    .aanbodblock_left{
+      width: 50%;
+    }
+
+    .aanbodblock_right{
+      width: 50%;
+    }
+  }
+
+}
+
