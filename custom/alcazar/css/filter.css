@@ -7,7 +7,7 @@
 .content-block {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 10px; }
+  padding: 50px 25px; }
 
 .clean-ul {
   list-style: none;
@@ -129,9 +129,11 @@ p {
       border-bottom: 2px solid #0f9e8e; }
 
 .view-id-appartementen .views-row, .view-id-huizen .views-row {
-  margin: 50px 10px; }
+  margin: 50px 0; }
 .view-id-appartementen .views-field-title, .view-id-huizen .views-field-title {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px; }
   .view-id-appartementen .views-field-title a, .view-id-huizen .views-field-title a {
     text-transform: lowercase;
     color: #0f9e8e;
@@ -139,40 +141,75 @@ p {
     text-decoration: none; }
 .view-id-appartementen span, .view-id-huizen span {
   text-transform: uppercase; }
+.view-id-appartementen .views-field-field-realestate-bebouwing,
 .view-id-appartementen .views-field-field-realestate-tag,
 .view-id-appartementen .views-field-field-realestate-opp,
 .view-id-appartementen .views-field-field-realestate-rooms,
-.view-id-appartementen .views-field-field-realestate-price, .view-id-huizen .views-field-field-realestate-tag,
+.view-id-appartementen .views-field-field-realestate-price, .view-id-huizen .views-field-field-realestate-bebouwing,
+.view-id-huizen .views-field-field-realestate-tag,
 .view-id-huizen .views-field-field-realestate-opp,
 .view-id-huizen .views-field-field-realestate-rooms,
 .view-id-huizen .views-field-field-realestate-price {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 0;
+  margin-left: 25px;
+  margin-right: 25px;
   border-bottom: 1px solid #dee5e5; }
+  .view-id-appartementen .views-field-field-realestate-bebouwing .field-content,
   .view-id-appartementen .views-field-field-realestate-tag .field-content,
   .view-id-appartementen .views-field-field-realestate-opp .field-content,
   .view-id-appartementen .views-field-field-realestate-rooms .field-content,
-  .view-id-appartementen .views-field-field-realestate-price .field-content, .view-id-huizen .views-field-field-realestate-tag .field-content,
+  .view-id-appartementen .views-field-field-realestate-price .field-content, .view-id-huizen .views-field-field-realestate-bebouwing .field-content,
+  .view-id-huizen .views-field-field-realestate-tag .field-content,
   .view-id-huizen .views-field-field-realestate-opp .field-content,
   .view-id-huizen .views-field-field-realestate-rooms .field-content,
   .view-id-huizen .views-field-field-realestate-price .field-content {
     display: inline-block; }
+    .view-id-appartementen .views-field-field-realestate-bebouwing .field-content a,
     .view-id-appartementen .views-field-field-realestate-tag .field-content a,
     .view-id-appartementen .views-field-field-realestate-opp .field-content a,
     .view-id-appartementen .views-field-field-realestate-rooms .field-content a,
-    .view-id-appartementen .views-field-field-realestate-price .field-content a, .view-id-huizen .views-field-field-realestate-tag .field-content a,
+    .view-id-appartementen .views-field-field-realestate-price .field-content a, .view-id-huizen .views-field-field-realestate-bebouwing .field-content a,
+    .view-id-huizen .views-field-field-realestate-tag .field-content a,
     .view-id-huizen .views-field-field-realestate-opp .field-content a,
     .view-id-huizen .views-field-field-realestate-rooms .field-content a,
     .view-id-huizen .views-field-field-realestate-price .field-content a {
       text-decoration: none;
       color: #0a0f0d; }
 .view-id-appartementen .views-field-field-realestate-img, .view-id-huizen .views-field-field-realestate-img {
-  margin: 25px auto;
-  width: 90%; }
-  .view-id-appartementen .views-field-field-realestate-img img, .view-id-huizen .views-field-field-realestate-img img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto !important; }
+  margin: 25px 0;
+  width: 100vw;
+  visibility: hidden; }
+  .view-id-appartementen .views-field-field-realestate-img .slick-initialized .slick-track, .view-id-huizen .views-field-field-realestate-img .slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    width: 100vw; }
+  .view-id-appartementen .views-field-field-realestate-img .js-slick-single-item, .view-id-huizen .views-field-field-realestate-img .js-slick-single-item {
+    width: 100vw; }
+    .view-id-appartementen .views-field-field-realestate-img .js-slick-single-item a, .view-id-huizen .views-field-field-realestate-img .js-slick-single-item a {
+      display: block; }
+    .view-id-appartementen .views-field-field-realestate-img .js-slick-single-item a, .view-id-appartementen .views-field-field-realestate-img .js-slick-single-item .slick-slide, .view-id-huizen .views-field-field-realestate-img .js-slick-single-item a, .view-id-huizen .views-field-field-realestate-img .js-slick-single-item .slick-slide {
+      padding: 0;
+      margin: 0;
+      width: 100%; }
+      .view-id-appartementen .views-field-field-realestate-img .js-slick-single-item a img, .view-id-appartementen .views-field-field-realestate-img .js-slick-single-item .slick-slide img, .view-id-huizen .views-field-field-realestate-img .js-slick-single-item a img, .view-id-huizen .views-field-field-realestate-img .js-slick-single-item .slick-slide img {
+        width: 100%;
+        height: auto; }
+  .view-id-appartementen .views-field-field-realestate-img .slick-dots, .view-id-huizen .views-field-field-realestate-img .slick-dots {
+    visibility: visible;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    text-align: center; }
+    .view-id-appartementen .views-field-field-realestate-img .slick-dots li, .view-id-huizen .views-field-field-realestate-img .slick-dots li {
+      display: inline;
+      background-color: transparent;
+      border: none; }
+    .view-id-appartementen .views-field-field-realestate-img .slick-dots button, .view-id-huizen .views-field-field-realestate-img .slick-dots button {
+      background-color: transparent;
+      border: none; }
+    .view-id-appartementen .views-field-field-realestate-img .slick-dots .slick-active button, .view-id-huizen .views-field-field-realestate-img .slick-dots .slick-active button {
+      text-decoration: underline; }
 .view-id-appartementen .views-field-field-realestate-plan .field-content, .view-id-huizen .views-field-field-realestate-plan .field-content {
   margin: 0 auto; }
 .view-id-appartementen .views-field-field-realestate-plan .file--application-pdf, .view-id-huizen .views-field-field-realestate-plan .file--application-pdf {
@@ -181,11 +218,19 @@ p {
   padding-left: 0;
   background-position: 0 0; }
 
-@media screen and (min-width: 600px) {
-  .views-field-field-realestate-img {
-    max-width: 250px !important; } }
 @media screen and (min-width: 900px) {
   .views-field-field-realestate-img {
-    max-width: 350px !important; } }
+    width: 100vw; }
+    .views-field-field-realestate-img .slick-initialized .slick-track {
+      display: flex;
+      align-items: center; }
+    .views-field-field-realestate-img .js-slick-single-item {
+      width: 30%; }
+      .views-field-field-realestate-img .js-slick-single-item .slick-slide {
+        width: 100%; }
+      .views-field-field-realestate-img .js-slick-single-item a {
+        width: 100%;
+        padding-left: 50px !important;
+        padding-right: 50px !important; } }
 
 /*# sourceMappingURL=filter.css.map */

@@ -7,7 +7,7 @@
 .content-block, .alcazar_content, #block-overons, #block-locatie {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 10px; }
+  padding: 50px 25px; }
 
 .clean-ul {
   list-style: none;
@@ -133,7 +133,7 @@ p {
 .aanbodblock_title {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px 25px 10px; }
+  padding: 0 25px 25px 25px; }
 
 .aanbodblock_left {
   width: 100%;

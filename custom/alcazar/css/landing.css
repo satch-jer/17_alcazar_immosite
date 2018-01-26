@@ -7,7 +7,7 @@
 .content-block {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 10px; }
+  padding: 50px 25px; }
 
 .clean-ul {
   list-style: none;
@@ -81,7 +81,7 @@ p {
     color: #ffffff; }
 
 .alcazar_landing {
-  min-height: 500px;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,5 +119,8 @@ p {
     transform: rotate(-0.5turn); }
   100% {
     transform: rotate(2turn); } }
+@media screen and (min-width: 900px) {
+  .alcazar_landing {
+    background-attachment: fixed; } }
 
 /*# sourceMappingURL=landing.css.map */

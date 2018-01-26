@@ -43,8 +43,18 @@ house:
   js:
     js/house.js: {}
 
-slideshow:
+download:
   version: 1
   js:
-    js/jquery.cycle.all.js: {}
-    js/slideshow.js: {}
+    js/download.js: {}
+
+slideshow:
+  version: 1
+  css:
+    css/slick.css: {}
+  js:
+    js/slick.min.js: {}
+    js/slideshow.config.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

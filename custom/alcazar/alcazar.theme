@@ -17,3 +17,13 @@ function alcazar_preprocess_links(&$variables) {
       $variables['links']['node-readmore']['link']['#title'] = t('download plan');
     }
 }
+
+/**
+ * Twig templating on content type
+ */
+function alcazar_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $content_type = $node->bundle();
+        $suggestions[] = 'page__'.$content_type;
+    }
+}

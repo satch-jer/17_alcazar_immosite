@@ -88,12 +88,14 @@
 .view-id-appartementen, .view-id-huizen{
   .views-row{
     //some whitespace between filter row and content
-    margin: $m $xs;
+    margin: $m 0;
   }
 
   //green title
   .views-field-title{
     margin-bottom: $s;
+    margin-left: $s;
+    margin-right:$s;
 
     a{
       text-transform: lowercase;
@@ -108,13 +110,15 @@
     text-transform: uppercase;
   }
 
+  .views-field-field-realestate-bebouwing,
   .views-field-field-realestate-tag,
   .views-field-field-realestate-opp,
   .views-field-field-realestate-rooms,
   .views-field-field-realestate-price
   {
-    padding-bottom: $xs;
-    padding-top: $xs;
+    padding: $xs 0;
+    margin-left: $s;
+    margin-right:$s;
     border-bottom: 1px solid $platinum;
 
     .field-content{
@@ -128,13 +132,55 @@
   }
 
   .views-field-field-realestate-img{
-    margin: $s auto;
-    width: 90%;
+    margin: $s 0;
+    width: 100vw;
+    visibility: hidden;
 
-    img{
-      width: 100%;
-      height: auto;
-      margin: 0 auto !important;
+    .slick-initialized .slick-track {
+      display: flex;
+      align-items: center;
+      visibility: visible;
+      width: 100vw;
+    }
+
+    .js-slick-single-item{
+      width: 100vw;
+
+      a{
+        display: block;
+      }
+
+      a, .slick-slide{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .slick-dots{
+      visibility: visible;
+      list-style:none;
+      padding-left:0;
+      font-size: 1.2rem;
+      text-align: center;
+      li{
+        display: inline;
+        background-color: transparent;
+        border: none;
+      }
+      button{
+        background-color: transparent;
+        border: none;
+      }
+      .slick-active{
+        button{
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -159,7 +205,6 @@
 
 @media screen and (min-width: 600px){
   .views-field-field-realestate-img{
-    max-width: 250px !important;
   }
 }
 
@@ -167,8 +212,28 @@
 
 
   .views-field-field-realestate-img{
-    max-width: 350px !important;
 
+    width: 100vw;
+
+    .slick-initialized .slick-track {
+      display: flex;
+      align-items: center;
+      //justify-content: space-around;
+    }
+
+    .js-slick-single-item{
+      width: 30%;
+
+      .slick-slide{
+        width: 100%;
+      }
+
+      a{
+        width: 100%;
+        padding-left: $m !important;
+        padding-right: $m !important;
+      }
+    }
   }
 
   .views-field-field-realestate-tag,

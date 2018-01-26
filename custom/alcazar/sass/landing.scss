@@ -4,7 +4,8 @@
 
 .alcazar_landing{
   //if no js, set min-height
-  min-height: 500px;
+  //min-height: 500px;
+  height: 80vh;
 
   //flexbox for vertical centering
   display: flex;
@@ -63,5 +64,11 @@ h1{
   }
   100% {
     transform: rotate(2turn);
+  }
+}
+
+@media screen and (min-width: 900px){
+  .alcazar_landing{
+    background-attachment: fixed;
   }
 }
